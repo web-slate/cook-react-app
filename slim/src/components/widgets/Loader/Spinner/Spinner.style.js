@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles'
 
-export default makeStyles(theme => ({
+export default makeStyles((theme) => ({
   root: {
     position: 'fixed',
     top: 0,
@@ -20,15 +20,15 @@ export default makeStyles(theme => ({
     },
   },
   bottom: {
-    color: theme.palette.grey[theme.palette.type === "light" ? 200 : 700]
+    color: theme.palette.grey[theme.palette.type === 'light' ? 200 : 700],
   },
   top: {
-    color: "#1a90ff",
-    animationDuration: "550ms",
-    position: "absolute",
-    left: 0
+    color: '#1a90ff',
+    animationDuration: '550ms',
+    position: 'absolute',
+    left: 0,
   },
   circle: {
-    strokeLinecap: "round",
-  }
-}));
+    strokeLinecap: 'round',
+  },
+}))

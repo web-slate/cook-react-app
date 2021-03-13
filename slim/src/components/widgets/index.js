@@ -1,2 +1,2 @@
-export { Spinner, BlockLoader } from './Loader';
-export { InputTextField } from './Fields';
+export { Spinner, BlockLoader } from './Loader'
+export { InputTextField } from './Fields'

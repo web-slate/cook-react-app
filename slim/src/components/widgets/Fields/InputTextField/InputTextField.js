@@ -1,11 +1,11 @@
-import React from "react";
-import TextField from "@material-ui/core/TextField";
+import React from 'react'
+import TextField from '@material-ui/core/TextField'
 
-import useStyles from "./InputTextField.style";
+import useStyles from './InputTextField.style'
 
 export default function InputTextField({
   name,
-  initialValue = "",
+  initialValue = '',
   value,
   error,
   placeholder,
@@ -13,11 +13,11 @@ export default function InputTextField({
   handleChange,
   onBlur,
 }) {
-  const classes = useStyles();
+  const classes = useStyles()
 
   const onChange = (event) => {
-    handleChange(event);
-  };
+    handleChange(event)
+  }
 
   return (
     <div>
@@ -38,5 +38,5 @@ export default function InputTextField({
         onBlur={onBlur}
       />
     </div>
-  );
+  )
 }

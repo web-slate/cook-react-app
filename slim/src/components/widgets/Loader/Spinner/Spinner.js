@@ -1,13 +1,9 @@
-import React from "react";
+import React from 'react'
 
-import useStyles from './Spinner.style';
+import useStyles from './Spinner.style'
 
 export default function Spinner(props) {
-  const classes = useStyles();
+  const classes = useStyles()
 
-  return (
-    <div className={classes.root}>
-      Spinner goes here...
-    </div>
-  );
-};
+  return <div className={classes.root}>Spinner goes here...</div>
+}

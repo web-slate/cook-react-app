@@ -1,11 +1,11 @@
-import React from 'react';
-import { withRouter } from 'react-router-dom';
+import React from 'react'
+import { withRouter } from 'react-router-dom'
 
 // Material UI
-import { makeStyles } from '@material-ui/styles';
-import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/styles'
+import Grid from '@material-ui/core/Grid'
+import Box from '@material-ui/core/Box'
+import Button from '@material-ui/core/Button'
 
 const useStyles = makeStyles((theme) => ({
   bgImage: {
@@ -30,11 +30,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 48,
     borderRadius: 4,
   },
-}));
+}))
 
 const NotFound = (props) => {
-  const classes = useStyles();
-  const { history } = props;
+  const classes = useStyles()
+  const { history } = props
 
   return (
     <Grid container>
@@ -59,7 +59,7 @@ const NotFound = (props) => {
         </Box>
       </Grid>
     </Grid>
-  );
-};
+  )
+}
 
-export default withRouter(NotFound);
+export default withRouter(NotFound)

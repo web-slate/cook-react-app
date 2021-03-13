@@ -1,6 +1,6 @@
-import { useIntl, FormattedMessage } from 'react-intl';
+import { useIntl, FormattedMessage } from 'react-intl'
 
-export { default as withTranslation } from './withI18n';
+export { default as withTranslation } from './withI18n'
 
-export const useI18n = useIntl;
-export const I18nMsg = FormattedMessage;
+export const useI18n = useIntl
+export const I18nMsg = FormattedMessage

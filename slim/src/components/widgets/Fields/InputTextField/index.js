@@ -1,1 +1,1 @@
-export { default } from './InputTextField';
+export { default } from './InputTextField'

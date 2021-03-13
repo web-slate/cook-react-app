@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { IntlProvider } from "react-intl";
-import axios from "axios";
+import React, { useState, useEffect } from 'react'
+import { IntlProvider } from 'react-intl'
+import axios from 'axios'
 
 const fetchTranslations = async (lang) => {
-  return await axios.get(`translations/${lang}.json`);
-};
+  return await axios.get(`translations/${lang}.json`)
+}
 
 const withI18n = (Component) => (props) => {
   const [messages, setMessages] = useState({})
@@ -12,9 +12,9 @@ const withI18n = (Component) => (props) => {
 
   useEffect(() => {
     fetchTranslations(locale).then((response) => {
-      setMessages(response.data);
-    });
-  }, []);
+      setMessages(response.data)
+    })
+  }, [])
 
   return (
     <IntlProvider
@@ -25,7 +25,7 @@ const withI18n = (Component) => (props) => {
     >
       <Component {...props} />
     </IntlProvider>
-  );
-};
+  )
+}
 
-export default withI18n;
+export default withI18n

@@ -1,18 +1,18 @@
-import React, { Suspense } from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import React, { Suspense } from 'react'
+import { Route, Switch, Redirect } from 'react-router-dom'
 
 // `Block` Components.
-import { PageLoader } from "@google-clone/blocks";
+import { PageLoader } from '@google-clone/blocks'
 
 // Utils.
-import { RoutePaths } from "@google-clone/utils";
+import { RoutePaths } from '@google-clone/utils'
 
 const SignInModule = React.lazy(() =>
-  import(/* webpackChunkName: "modules/sign-in" */ "./modules/SignIn")
-);
+  import(/* webpackChunkName: "modules/sign-in" */ './modules/SignIn')
+)
 const DashboardModule = React.lazy(() =>
-  import(/* webpackChunkName: "modules/dashboard" */ "./modules/Dashboard")
-);
+  import(/* webpackChunkName: "modules/dashboard" */ './modules/Dashboard')
+)
 
 const Routes = () => {
   return (
@@ -23,7 +23,7 @@ const Routes = () => {
         <Redirect to={RoutePaths.NotFound} />
       </Switch>
     </Suspense>
-  );
-};
+  )
+}
 
-export default Routes;
+export default Routes

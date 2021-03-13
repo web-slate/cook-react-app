@@ -1,4 +1,4 @@
-import { makeStyles } from '@material-ui/styles';
+import { makeStyles } from '@material-ui/styles'
 
 export default makeStyles((theme) => ({
   root: {
@@ -6,4 +6,4 @@ export default makeStyles((theme) => ({
     width: '100%',
     background: theme.palette.white,
   },
-}));
+}))

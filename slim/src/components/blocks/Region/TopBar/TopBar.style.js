@@ -1,14 +1,14 @@
-import { makeStyles } from '@material-ui/styles';
+import { makeStyles } from '@material-ui/styles'
 
-export default makeStyles(theme => ({
+export default makeStyles((theme) => ({
   root: {
-    boxShadow: 'none'
+    boxShadow: 'none',
   },
   flexGrow: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   signOutButton: {
-    marginLeft: theme.spacing(1)
+    marginLeft: theme.spacing(1),
   },
   appBar: {
     background: theme.palette.baseColor,
@@ -20,6 +20,6 @@ export default makeStyles(theme => ({
     fontFamily: 'Inter',
     fontWeight: '300',
     fontSize: '16px',
-    lineHeight: '19px'
-  }
-}));
+    lineHeight: '19px',
+  },
+}))

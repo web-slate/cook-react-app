@@ -1,1 +1,1 @@
-export { default } from './BlockLoader';
+export { default } from './BlockLoader'
