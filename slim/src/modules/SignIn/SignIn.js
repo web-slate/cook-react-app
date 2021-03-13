@@ -1,11 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useHistory } from 'react-router-dom'
 import PropTypes from 'prop-types'
-
-// Material UI
-import Grid from '@material-ui/core/Grid'
-
-import useStyles from './SignIn.style'
 
 // `UI` Components.
 import { InputTextField } from '@google-clone/widgets'
@@ -18,13 +13,12 @@ import { RoutePaths } from '@google-clone/utils'
 
 const SignIn = (props) => {
   let history = useHistory()
-  const classes = useStyles()
   const { formatMessage } = useI18n()
 
   return (
     <>
-      <Grid container className={classes.root}>
-        <Grid item>
+      <section>
+        <div>
           <h1>Login Form</h1>
           Username:{' '}
           <InputTextField
@@ -39,8 +33,8 @@ const SignIn = (props) => {
           >
             go to dashboard
           </button>
-        </Grid>
-      </Grid>
+        </div>
+      </section>
     </>
   )
 }
