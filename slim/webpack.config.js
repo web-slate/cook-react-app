@@ -91,7 +91,7 @@ module.exports = {
     contentBase: "./src/static",
     hot: true,
     proxy: {
-      "/api": "http://localhost:8080",
+      "/api": "http://YOUR_API_URL:9000",
     },
   },
 };
