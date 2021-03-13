@@ -1,11 +1,9 @@
 import React, { Fragment } from 'react'
-import { useSelector } from 'react-redux'
 
 // `UI` Components.
 import { Spinner } from '@google-clone/widgets'
 
-export default function PageLoader() {
-  const loader = useSelector((state) => state.loader)
+export default function PageLoader({ loading }) {
 
-  return <Fragment>{loader.loading && <Spinner />}</Fragment>
+  return <Fragment>{loading && <Spinner />}</Fragment>
 }
