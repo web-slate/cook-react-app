@@ -16,12 +16,10 @@ function App() {
   return (
     <>
       <ErrorHandler>
-        <Provider store={store}>
-          <PageLoader />
-          <Router history={browserHistory}>
-            <Routes />
-          </Router>
-        </Provider>
+        <PageLoader />
+        <Router history={browserHistory}>
+          <Routes />
+        </Router>
       </ErrorHandler>
     </>
   )
