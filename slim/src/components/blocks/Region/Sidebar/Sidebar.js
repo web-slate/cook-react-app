@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Drawer } from '@material-ui/core'
 import { useI18n } from '@google-clone/i18n'
 
 // `Domain` Components.
@@ -13,8 +12,6 @@ import { RoutePaths } from '@google-clone/utils'
 const Sidebar = (props) => {
   const { open, variant, onClose, className, ...rest } = props
   const { formatMessage } = useI18n()
-
-  const classes = useStyles()
 
   const pages = [
     {
@@ -30,11 +27,11 @@ const Sidebar = (props) => {
   ]
 
   return (
-    <Drawer variant={variant} onClose={onClose} open={open}>
-      <div {...rest} className={`${classes.root} ${className}`}>
-        <SidebarNav className={classes.nav} pages={pages} />
+    <section>
+      <div {...rest}>
+        <SidebarNav pages={pages} />
       </div>
-    </Drawer>
+    </section>
   )
 }
 

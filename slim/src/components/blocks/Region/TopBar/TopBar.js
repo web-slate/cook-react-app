@@ -8,14 +8,12 @@ import useStyles from './TopBar.style'
 
 const TopBar = (props) => {
   const { className, ...rest } = props
-  const classes = useStyles()
 
   return (
-    <header {...rest} className={`${classes.root} ${classes.appBar}`}>
-      <RouterLink to="/" className={classes.logo}>
+    <header {...rest}>
+      <RouterLink to="/">
         <I18nMsg id="app_name" />
       </RouterLink>
-      <div className={classes.flexGrow} />
     </header>
   )
 }

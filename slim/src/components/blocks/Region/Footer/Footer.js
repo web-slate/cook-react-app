@@ -1,24 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Typography, Link } from '@material-ui/core'
-
-import useStyles from './Footer.style'
 
 const Footer = (props) => {
   const { className, ...rest } = props
 
-  const classes = useStyles()
-
   return (
-    <div {...rest} className={`${classes.root} ${className}`}>
-      <Typography variant="body1">
+    <div {...rest}>
+      <div>
         &copy;{' '}
-        <Link component="a" href="http://react-chef/" target="_blank">
+        <a href="http://react-chef/" target="_blank">
           React Chef
-        </Link>
+        </a>
         . 2020
-      </Typography>
-      <Typography variant="caption">React Chef</Typography>
+      </div>
+      <div>React Chef</div>
     </div>
   )
 }
