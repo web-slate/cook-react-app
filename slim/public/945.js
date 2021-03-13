@@ -1,1 +1,0 @@
-(self.webpackChunkreact_chef=self.webpackChunkreact_chef||[]).push([[945],{1945:e=>{"use strict";e.exports=JSON.parse('{"app_name":"Google Clone","user_name":"User name","dashboard":"Dashboard","other_module":"Other module name"}')}}]);
