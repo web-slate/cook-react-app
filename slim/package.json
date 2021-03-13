@@ -6,6 +6,7 @@
     "dev": "webpack serve --mode development",
     "lint": "eslint src --ext .js",
     "build": "webpack --mode production --progress",
+    "prettier": "prettier --write src",
     "clean": "rm -rf node_modules"
   },
   "keywords": [],
