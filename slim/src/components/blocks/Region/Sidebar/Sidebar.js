@@ -4,7 +4,6 @@ import { useI18n } from '@google-clone/i18n'
 
 // `Domain` Components.
 import SidebarNav from './SidebarNav'
-import useStyles from './Sidebar.style'
 
 // Utils.
 import { RoutePaths } from '@google-clone/utils'
