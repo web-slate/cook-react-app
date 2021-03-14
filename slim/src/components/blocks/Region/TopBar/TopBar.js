@@ -4,8 +4,6 @@ import PropTypes from 'prop-types'
 
 import { I18nMsg } from '@google-clone/i18n'
 
-import useStyles from './TopBar.style'
-
 const TopBar = (props) => {
   const { className, ...rest } = props
 
