@@ -73,6 +73,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: path.resolve(__dirname, "src/static/index.html"),
+      APP_ROOT_ID: 'google-clone-app',
+      APP_VERSION: PACKAGE.version
     }),
 
     // Copy all Assets, Icons to `public` Folder.
